@@ -1,0 +1,444 @@
+#game {
+  background-color: #0f0d2ff6;
+  color: rgb(55, 45, 45);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+body {
+  background-color: #0F0D2F;
+}
+
+#status {
+  color: rgb(55, 45, 45);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: relative;
+  text-align: left;
+}
+
+#lives {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  margin-left: 5%;
+}
+
+#score {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-right: 5%;
+}
+
+#debug {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  float: left;
+  text-align: center;
+  margin-left: 4%;
+}
+
+#menu {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#menuitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#start {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#start:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#start:active {
+  transform: translateY(4px);
+}
+
+#highscore {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#highscore:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#highscore:active {
+  transform: translateY(4px);
+}
+
+#scrollContainer {
+  overflow: auto;
+  overflow-x: auto;
+  height: 600px;
+  max-height: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 60%;
+}
+
+#highscorecontainer {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+table {
+  border: 1px solid rgb(255, 25, 25);
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+  color: rgb(224, 241, 192);
+}
+
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+  color: rgb(241, 241, 7);
+}
+
+tr:nth-child(even) {
+  background-color: #0e1c44;
+}
+
+#hgBack {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#hgBack:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#hgBack:active {
+  transform: translateY(4px);
+}
+
+#credits {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#credits:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#credits:active {
+  transform: translateY(4px);
+}
+
+#exit {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#exit:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#exit:active {
+  transform: translateY(4px);
+}
+
+#cBack {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+#cBack:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+#cBack:active {
+  transform: translateY(4px);
+}
+
+input[type="button"], input[type="submit"] {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Hover-Effekt */
+input[type="button"]:hover, input[type="submit"]:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(68, 0, 68);
+}
+
+/* Klick-Effekt */
+input[type="button"]:active, input[type="submit"]:active {
+  transform: translateY(4px);
+}
+
+#loginContainer {
+  width: 40%;
+  height: 200%;
+  margin: 0 auto;
+  background-color: #0e1c44;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#status {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  float: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 1%;
+}
+#spracheButton {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 80px;
+  color: #ffffff00;
+  border: #fafafa00;
+}

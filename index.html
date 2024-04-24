@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pac Man</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="gamecontainer">
+    <div id="game" class="game">
+      <div id="menu">
+        <div id="CreditsContainer">
+          <h1 id="creditHeader">Credits</h1>
+          <p>Kasim Mermer</p>
+          <p>Marvin Schubert</p>
+          <input type="button" id="cBack" value="zurück" style="width: 150px;">
+        </div>
+        <div id="highscoreContainer">
+          <h1 id="highscoreHeader">Highscore</h1>
+          <div id="scrollContainer">
+            <table id="highscoreTable">
+              <tr>
+                <th id="platzHeader">Platz</th>
+                <th id="nameHeader">Name</th>
+                <th id="scoreHeader">Score</th>
+              </tr>
+            </table>
+          </div>
+          <input type="button" id="hgBack" value="zurück" style="width: 150px;">
+        </div>
+        <div id="menucontainer">
+          <h1>Pac Man</h1>
+          <h3 id="currentSite">Hauptmenu</h3>
+          <div id="loginContainer">
+
+            <div id="register">
+              <form action="index.html" method="post">
+                <input type="text" id="usernameA" name="username" placeholder="Username">
+                <input type="password" id="passwordA" name="password" placeholder="Password">
+                <input type="button" id="login" value="Login">
+                <input type="text" id="usernameR" name="username" placeholder="Username">
+                <input type="text" id="email" name="email" placeholder="E-Mail">
+                <input type="password" id="passwordR" name="password" placeholder="Password">
+                <input type="button" id="registerR" value="Register">
+              </form>
+              <div id="statusContainer">
+                <p id="status">Status</p>
+              </div>
+            </div>
+          </div>
+          <div id="menucontent">
+            <div id="menuheader">
+              <div id="menuitems">
+                <input type="button" id="start" value="Start" style="width: 250px;">
+                <input type="button" id="highscore" value="Highscore" style="width: 250px;">
+                <input type="button" id="credits" value="Credits" style="width: 250px;">
+                <input type="button" id="exit" value="exit" style="width: 250px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <div class="debug">
+        <div id="debug">
+          <div id="debugText">
+            <p id="debugLabel">Debug</p>
+            <p class="Coords"></p>
+          </div>
+        </div>
+      </div>
+      <div id="status">
+        <div id="score">
+          <p id="scoreLabel">Score</p>
+          <p id="scoreValue">0</p>
+          <button id="spracheButton">Sprache</button>
+        </div>
+        <div id="lives">
+          <p id="livesLabel">Lives</p>
+          <img id="live1" src="images\pacman_lives.png" alt="Lives" width="50">
+          <img id="live2" src="images\pacman_lives.png" alt="Lives" width="50">
+          <img id="live3" src="images\pacman_lives.png" alt="Lives" width="50">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
